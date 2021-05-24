@@ -1,8 +1,100 @@
 :root {
 	--Violet: hsl(257, 40%, 49%);
 	--Soft-Magenta: hsl(300, 69%, 71%);
+	--white: hsl(0, 0%, 100%);
 }
 
 body {
 	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: var(--white);
+	background: url(../images/bg-mobile.svg) no-repeat top, var(--Violet);
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+button,
+h3 {
+	font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+	margin: 0;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.container {
+	width: 90%;
+	max-width: 375px;
+	margin: 0 auto;
+}
+
+/* button */
+.btn {
+	padding: 0.9em 3em;
+	color: var(--Violet);
+	font-weight: 600;
+	background: var(--white);
+	border: 0;
+	border-radius: 100vh;
+	cursor: pointer;
+}
+
+/* layout */
+.logo {
+	max-width: 50%;
+	padding-top: 1.5em;
+}
+
+.showcase {
+	text-align: center;
+}
+
+.flex-img {
+	padding: 4em 0;
+}
+
+.info-title {
+	max-width: 25ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info-subtitle {
+	max-width: 33ch;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.5;
+}
+
+.flex-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.links-flex {
+	display: flex;
+	justify-content: space-around;
+	padding: 2em;
+}
+
+.fab {
+	padding: 0.5em;
+	border: 1px solid var(--white);
+	border-radius: 100vh;
 }
