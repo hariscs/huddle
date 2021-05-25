@@ -8,7 +8,8 @@ body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 	color: var(--white);
-	background: url(../images/bg-mobile.svg) no-repeat top, var(--Violet);
+	background: url(../images/bg-mobile.svg) no-repeat, var(--Violet);
+	background-position: center;
 }
 
 img {
@@ -121,4 +122,37 @@ a {
 .fab:focus {
 	border-color: var(--Soft-Magenta);
 	color: var(--Soft-Magenta);
+}
+
+@media (min-width: 600px) {
+	body {
+		background: url(../images/bg-desktop.svg) no-repeat top, var(--Violet);
+		background-position: center;
+	}
+	.container {
+		max-width: 1440px;
+	}
+	.flex {
+		flex-direction: row;
+		gap: 2em;
+	}
+
+	/* .flex > * {
+		width: 100%;
+	} */
+	.showcase {
+		text-align: unset;
+	}
+
+	.info-header {
+		text-align: left;
+	}
+
+	.flex-info {
+		align-items: flex-start;
+	}
+
+	.links-flex {
+		justify-content: flex-end;
+	}
 }
